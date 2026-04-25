@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thor&co</title>
+    <link rel="stylesheet" href="style-index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="mainNav">
+      <a class="nav-logo" href="#">thor<span>&co</span></a>
+      <ul class="nav-links">
+        <li><a href="#categories">Koleksi</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#featured">Lookbook</a></li>
+        <li><a href="#test">Ulasan</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="catalog.html" class="btn-solid">
+          Belanja Sekarang
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6h8M6 2l4 4-4 4" /></svg>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#categories" onclick="toggleMobileNav()">Koleksi</a>
+      <a href="#about" onclick="toggleMobileNav()">Tentang Kami</a>
+      <a href="#featured" onclick="toggleMobileNav()">Lookbook</a>
+      <a href="#test" onclick="toggleMobileNav()">Ulasan</a>
+      <!-- <a href="catalog.html" class="btn-solid">Belanja Sekarang</a> -->
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <div class="eyebrow-dot"></div>
+          2026 Collection
+        </div>
+        <h1 class="hero-title">
+          Dressed<br />for <em>every<br />moment.</em>
+        </h1>
+        <p class="hero-sub">Busana premium untuk pria & wanita modern. Dari casual harian hingga formal elegan — semua tersedia dalam satu koleksi.</p>
+        <div class="hero-actions">
+          <a href="catalog.html" class="btn-hero btn-hero-dark">
+            Jelajahi Katalog
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5" /></svg>
+          </a>
+        </div>
+        <div class="hero-tags">
+          <span class="hero-tag">Kemeja</span>
+          <span class="hero-tag">Kaos</span>
+          <span class="hero-tag">Polo</span>
+          <span class="hero-tag">Hoodie</span>
+          <span class="hero-tag">Jaket</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=900&q=90" alt="Hero fashion" onerror="this.style.display = 'none'" />
+        <div class="hero-img-overlay"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <!-- Duplikat untuk loop mulus -->
+        <div class="marquee-item">
+          Premium Quality
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Buatan Indonesia
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Free Ongkir 300k
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Garansi 30 Hari
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          55+ Produk
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          5 Kategori
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Premium Quality
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Buatan Indonesia
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Free Ongkir 300k
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          Garansi 30 Hari
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          55+ Produk
+          <div class="marquee-sep"></div>
+        </div>
+        <div class="marquee-item">
+          5 Kategori
+          <div class="marquee-sep"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+      <div class="section-header-row reveal">
+        <div>
+          <div class="section-eyebrow">Jelajahi</div>
+          <h2 class="section-title">Lima <em>Kategori</em></h2>
+        </div>
+        <a href="catalog.html" class="btn-outline">Lihat Semua →</a>
+      </div>
+      <div class="cat-grid">
+        <a href="catalog.html" class="cat-card reveal reveal-delay-1">
+          <img
+            src="https://images.pexels.com/photos/11485035/pexels-photo-11485035.jpeg"
+            alt="Kemeja"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="cat-card-placeholder" style="display: none">👔</div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-info">
+            <div class="cat-card-name">Kemeja</div>
+            <div class="cat-card-count">11 produk</div>
+          </div>
+        </a>
+        <a href="catalog.html" class="cat-card reveal reveal-delay-2">
+          <img
+            src="https://images.pexels.com/photos/20458071/pexels-photo-20458071.jpeg"
+            alt="Kaos"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="cat-card-placeholder" style="display: none">👕</div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-info">
+            <div class="cat-card-name">Kaos / T-Shirt</div>
+            <div class="cat-card-count">11 produk</div>
+          </div>
+        </a>
+        <a href="catalog.html" class="cat-card reveal reveal-delay-3">
+          <img
+            src="https://images.pexels.com/photos/11100267/pexels-photo-11100267.jpeg"
+            alt="Polo"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="cat-card-placeholder" style="display: none">🎽</div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-info">
+            <div class="cat-card-name">Polo Shirt</div>
+            <div class="cat-card-count">11 produk</div>
+          </div>
+        </a>
+        <a href="catalog.html" class="cat-card reveal reveal-delay-1">
+          <img
+            src="https://images.pexels.com/photos/9594667/pexels-photo-9594667.jpeg"
+            alt="Hoodie"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="cat-card-placeholder" style="display: none">🧥</div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-info">
+            <div class="cat-card-name">Hoodie & Sweater</div>
+            <div class="cat-card-count">11 produk</div>
+          </div>
+        </a>
+        <a href="catalog.html" class="cat-card reveal reveal-delay-2">
+          <img
+            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80"
+            alt="Jaket"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="cat-card-placeholder" style="display: none"></div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-info">
+            <div class="cat-card-name">Jaket</div>
+            <div class="cat-card-count">11 produk</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values" id="about">
+      <div class="section-header-row reveal">
+        <div>
+          <div class="section-eyebrow">Mengapa thor&c0</div>
+          <h2 class="section-title">Kualitas yang <em>Berbicara</em></h2>
+        </div>
+      </div>
+      <div class="values-grid">
+        <div class="value-cell reveal">
+          <div class="value-icon">🧵</div>
+          <div class="value-title">Material Premium</div>
+          <div class="value-desc">Setiap bahan dipilih dengan ketat — dari cotton combed, linen, merino wool, hingga kulit sapi asli dari Garut.</div>
+        </div>
+        <div class="value-cell reveal reveal-delay-1">
+          <div class="value-icon">✂️</div>
+          <div class="value-title">Potongan Presisi</div>
+          <div class="value-desc">Dibuat dengan pola yang sudah melalui riset panjang. Setiap jahitan dirancang untuk kenyamanan dan estetika terbaik.</div>
+        </div>
+        <div class="value-cell reveal reveal-delay-2">
+          <div class="value-icon">🏭</div>
+          <div class="value-title">Buatan Lokal</div>
+          <div class="value-desc">Produksi 100% di Indonesia — Bandung, Jakarta, Bali, dan Yogyakarta. Mendukung industri fashion lokal yang berkualitas.</div>
+        </div>
+        <div class="value-cell reveal">
+          <div class="value-icon">🚚</div>
+          <div class="value-title">Pengiriman Cepat</div>
+          <div class="value-desc">Estimasi 2–4 hari kerja ke seluruh Indonesia. Gratis ongkir untuk pembelian di atas Rp 300.000.</div>
+        </div>
+        <div class="value-cell reveal reveal-delay-1">
+          <div class="value-icon">↩️</div>
+          <div class="value-title">Garansi 30 Hari</div>
+          <div class="value-desc">Tidak puas dengan produk karena cacat produksi? Kembalikan dalam 30 hari, kami siap ganti atau refund penuh.</div>
+        </div>
+        <div class="value-cell reveal reveal-delay-2">
+          <div class="value-icon">💬</div>
+          <div class="value-title">Layanan Responsif</div>
+          <div class="value-desc">Tim customer service kami siap membantu setiap hari via WhatsApp, email, atau DM Instagram.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured" id="featured">
+      <div class="section-header-row reveal">
+        <div>
+          <div class="section-eyebrow">Pilihan Desainer</div>
+          <h2 class="section-title">Produk <em>Terpilih</em></h2>
+        </div>
+        <a href="catalog.html" class="btn-outline">Lihat Semua →</a>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-big reveal">
+          <img
+            src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=700&q=85"
+            alt="Leather Moto Jacket"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="featured-big-placeholder" style="display: none"></div>
+          <div class="featured-overlay"></div>
+          <div class="featured-caption">
+            <div class="featured-cap-tag">Jaket</div>
+            <div class="featured-cap-name">Leather Moto<br />Jacket</div>
+            <div class="featured-cap-price">Rp 1.299.000</div>
+          </div>
+        </div>
+        <div class="featured-right">
+          <a href="catalog.html" class="featured-small reveal">
+            <div class="featured-small-img">
+              <img
+                src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400&q=80"
+                alt="Oxford Slim"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="featured-small-img-placeholder" style="display: none">👔</div>
+            </div>
+            <div class="featured-small-info">
+              <div class="featured-small-cat">Kemeja</div>
+              <div class="featured-small-name">Oxford Slim Fit</div>
+              <div class="featured-small-price">Rp 289.000</div>
+            </div>
+            <div class="featured-small-arrow">→</div>
+          </a>
+          <a href="catalog.html" class="featured-small reveal reveal-delay-1">
+            <div class="featured-small-img">
+              <img
+                src="https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?w=400&q=80"
+                alt="Oversized Tee"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="featured-small-img-placeholder" style="display: none">👕</div>
+            </div>
+            <div class="featured-small-info">
+              <div class="featured-small-cat">Kaos</div>
+              <div class="featured-small-name">Oversized Drop Tee</div>
+              <div class="featured-small-price">Rp 199.000</div>
+            </div>
+            <div class="featured-small-arrow">→</div>
+          </a>
+          <a href="catalog.html" class="featured-small reveal reveal-delay-2">
+            <div class="featured-small-img">
+              <img
+                src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=400&q=80"
+                alt="Merino Polo"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="featured-small-img-placeholder" style="display: none">🎽</div>
+            </div>
+            <div class="featured-small-info">
+              <div class="featured-small-cat">Polo Shirt</div>
+              <div class="featured-small-name">Merino Wool Polo</div>
+              <div class="featured-small-price">Rp 499.000</div>
+            </div>
+            <div class="featured-small-arrow">→</div>
+          </a>
+          <a href="catalog.html" class="featured-small reveal reveal-delay-3">
+            <div class="featured-small-img">
+              <img
+                src="https://images.unsplash.com/photo-1578681994506-b8f463449011?w=400&q=80"
+                alt="Oversized Hoodie"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="featured-small-img-placeholder" style="display: none">🧥</div>
+            </div>
+            <div class="featured-small-info">
+              <div class="featured-small-cat">Hoodie</div>
+              <div class="featured-small-name">Oversized Hoodie</div>
+              <div class="featured-small-price">Rp 449.000</div>
+            </div>
+            <div class="featured-small-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stats-grid">
+        <div class="stat-cell reveal">
+          <div class="stat-number">55+</div>
+          <div class="stat-label-text">Produk Pilihan</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-1">
+          <div class="stat-number">5</div>
+          <div class="stat-label-text">Kategori Baju</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-2">
+          <div class="stat-number">4.8</div>
+          <div class="stat-label-text">Rating Rata-rata</div>
+        </div>
+        <div class="stat-cell reveal reveal-delay-3">
+          <div class="stat-number">30</div>
+          <div class="stat-label-text">Hari Garansi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="test">
+      <div class="section-header-row reveal">
+        <div>
+          <div class="section-eyebrow">Yang Mereka Katakan</div>
+          <h2 class="section-title">Ulasan <em>Pelanggan</em></h2>
+        </div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Kualitas bahan Oxford Slim Fit-nya beneran premium. Udah 6 bulan dipake tiap minggu dan masih kayak baru. Worth every penny!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div>
+              <div class="testi-name">Rizky A.</div>
+              <div class="testi-meta">Pembeli Verified · Jakarta</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Hoodie oversized-nya cocok banget sama vibe streetwear gue. Ukurannya pas, bahannya tebel tapi ga bikin gerah. Recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👦</div>
+            <div>
+              <div class="testi-name">Dimas P.</div>
+              <div class="testi-meta">Pembeli Verified · Bandung</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars">★★★★☆</div>
+          <p class="testi-quote">"Leather jacket-nya keren abis. Bahannya genuine leather asli, berat di harga tapi worth it. Pengiriman juga cepet banget."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">🧑</div>
+            <div>
+              <div class="testi-name">Fajar M.</div>
+              <div class="testi-meta">Pembeli Verified · Surabaya</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Flannel Check Shirt-nya hangat banget dan motifnya keren. Bahan flannelnya tebal, cocok banget buat musim hujan!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">👨</div>
+            <div>
+              <div class="testi-name">Andi S.</div>
+              <div class="testi-meta">Pembeli Verified · Yogyakarta</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Beli Merino Wool Polo buat meeting, komentarnya positif semua. Bahannya adem meski di ruangan panas, worth it banget!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">🧑</div>
+            <div>
+              <div class="testi-name">Budi R.</div>
+              <div class="testi-meta">Pembeli Verified · Medan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-box">
+        <div class="cta-bg-img">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1400&q=85" alt="" onerror="this.style.display = 'none'" />
+        </div>
+        <div class="cta-pattern"></div>
+        <div class="cta-eyebrow">Mulai Sekarang</div>
+        <h2 class="cta-title">Temukan gaya <em>terbaik</em><br />versi kamu.</h2>
+        <p class="cta-sub">Jelajahi lebih dari 55 produk premium dari 5 kategori berbeda. Dari santai hingga formal, semua ada di thor&c0.</p>
+        <div class="cta-actions">
+          <a href="catalog.html" class="btn-cta-white">
+            Belanja Sekarang
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">thor<span>&co</span></div>
+          <p class="footer-desc">Brand fashion pria premium buatan Indonesia. Kualitas internasional, harga lokal.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Produk</div>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Kemeja</a></li>
+            <li><a href="catalog.html">Kaos / T-Shirt</a></li>
+            <li><a href="catalog.html">Polo Shirt</a></li>
+            <li><a href="catalog.html">Hoodie & Sweater</a></li>
+            <li><a href="catalog.html">Jaket</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Informasi</div>
+          <ul class="footer-links">
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Panduan Ukuran</a></li>
+            <li><a href="#">Cara Perawatan</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Bantuan</div>
+          <ul class="footer-links">
+            <li><a href="#">Cara Pemesanan</a></li>
+            <li><a href="#">Kebijakan Retur</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 thor&co. All rights reserved.</div>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">TK</a>
+          <a href="#" class="social-btn">WA</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // ── Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        document.getElementById("mainNav").classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ── Mobile nav
+      function toggleMobileNav() {
+        const nav = document.getElementById("mobileNav");
+        nav.classList.toggle("open");
+      }
+
+      // ── Scroll reveal
+      const revealEls = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+      );
+      revealEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
