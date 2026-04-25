@@ -60,6 +60,9 @@ nav.scrolled {
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 500;
@@ -67,6 +70,13 @@ nav.scrolled {
   text-decoration: none;
   color: var(--text-primary);
 }
+
+.nav-logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
 .nav-logo span {
   color: var(--text-muted);
   font-weight: 400;
